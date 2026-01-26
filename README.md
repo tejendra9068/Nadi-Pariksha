@@ -147,13 +147,12 @@ Paper
 
 👨‍🎓 Authors
 
-Tejendra Singh – BCA 2nd Year, Sharda University, Agra
+Tejendra Singh – Sharda University, Agra
 
 👨‍🏫 Mentor
 
 Dr. Manish Baboo Agarwal
 Faculty Mentor & Academic Guide
-Department of Computer Applications
 Sharda University, Agra
 
 🙏 Acknowledgment
