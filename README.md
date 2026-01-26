@@ -164,4 +164,6 @@ The authors would like to express their sincere gratitude to Dr. Manish Baboo Ag
 📜 License
 
 This project is intended for academic, research, and educational purposes.
-(Add an open-source license if you plan public collaboration.)
+(Add an open-source license if you plan public collaboration.
+
+**This project powered by Alpha Ignite Group**
