@@ -1,6 +1,6 @@
 # Nadi-Pariksha
 
-🧘 Sensor-Based Nadi Pariksha Diagnostic Machine
+**🧘 Sensor-Based Nadi Pariksha Diagnostic Machine**
 
 A sensor-driven digital system for Ayurvedic Nadi Pariksha (pulse diagnosis) that objectively analyzes Vata, Pitta, and Kapha doshas using modern biomedical sensors, embedded systems, and signal-processing algorithms.
 
