@@ -149,8 +149,6 @@ Paper
 
 Tejendra Singh – BCA 2nd Year, Sharda University, Agra
 
-Nitin Sharma – BCA 2nd Year, Sharda University, Agra
-
 📜 License
 
 This project is intended for academic, research, and educational purposes.
