@@ -149,6 +149,19 @@ Paper
 
 Tejendra Singh – BCA 2nd Year, Sharda University, Agra
 
+👨‍🏫 Mentor
+
+Dr. Manish Baboo Agarwal
+Faculty Mentor & Academic Guide
+Department of Computer Applications
+Sharda University, Agra
+
+🙏 Acknowledgment
+
+The authors would like to express their sincere gratitude to Dr. Manish Baboo Agarwal for his valuable guidance, technical insights, and continuous encouragement throughout the development of this project. His mentorship played a crucial role in aligning the system design with both academic rigor and practical applicability in the field of digital healthcare and Ayurvedic diagnostics.
+
+🔹 Where to place this in README?
+
 📜 License
 
 This project is intended for academic, research, and educational purposes.
