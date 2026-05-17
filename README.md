@@ -119,3 +119,10 @@ firebase deploy --only hosting
 ## ⚖️ Ethics & Academic Standards
 
 This dashboard and associated research data strictly comply with **IEEE Ethics Guidelines** and **HIPAA/HCP Data Standards**. All patient pulse datasets are entirely anonymized at the MCU level prior to transmission to local client browsers.
+
+
+---
+
+## ?? Original Project Research & Architecture
+
+
