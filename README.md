@@ -120,9 +120,82 @@ firebase deploy --only hosting
 
 This dashboard and associated research data strictly comply with **IEEE Ethics Guidelines** and **HIPAA/HCP Data Standards**. All patient pulse datasets are entirely anonymized at the MCU level prior to transmission to local client browsers.
 
+---
+
+## 📚 Academic Research & Project Details
+
+### 📌 Project Overview
+Nadi Pariksha is a core Ayurvedic diagnostic technique based on pulse examination. Traditional methods depend heavily on practitioner skill and are often subjective.
+
+This project proposes a sensor-based pre-prototype system that:
+- Digitizes pulse examination
+- Measures pulse rate, rhythm, strength, and temperature
+- Maps physiological signals to dosha dominance
+- Displays results on a digital dashboard
+
+### 🎯 Key Objectives
+- Reduce subjectivity in Ayurvedic pulse diagnosis
+- Digitize Vata–Pitta–Kapha pulse characteristics
+- Enable repeatable and objective analysis
+- Support preventive and integrative healthcare
+- Align with AYUSH & ABDM (India’s Digital Health Mission)
+
+### 🧠 Hardware & Embedded Architecture
+**1️⃣ Sensor Layer**
+- Pressure Sensors (Piezoelectric / Piezoresistive)
+- PPG Sensors (Photoplethysmography)
+- Skin Temperature Sensor (Tapamana)
+- Sensors are placed at classical Vata, Pitta, Kapha wrist positions.
+
+**2️⃣ Embedded System**
+- Microcontroller (e.g., Arduino Nano)
+- ADC-based signal acquisition
+- Noise filtering (0.5–20 Hz bandpass)
+- Bluetooth / USB communication
+
+**3️⃣ Software & Analytics**
+- Pulse waveform analysis
+- Feature extraction: Heart Rate (Vega), Rhythm (Tala), Strength (Bala), Shape/Tension (Akruti), Temperature (Tapamana)
+- Rule-based & ML-ready dosha classification logic
+
+### 🧪 Validation Strategy
+- Double-blind comparison with expert Ayurvedic practitioners
+- Statistical agreement analysis (e.g., Cohen’s Kappa)
+- Iterative refinement using expert feedback
+- Future scope for clinical trials
+
+### 🇮🇳 National Policy Relevance
+This project aligns with:
+- AYUSH Integration
+- Ayushman Bharat Digital Mission (ABDM)
+- Preventive & community healthcare initiatives
+- Digital transformation of traditional medicine
+
+### 🚀 Future Scope
+- Hardware prototype development
+- Machine Learning–based dosha classification
+- Multi-modal sensing (ECG + PPG)
+- Cloud-based analytics & telemedicine support
+- Integration with Digital Health IDs
 
 ---
 
-## ?? Original Project Research & Architecture
+## 📄 Research Foundation
 
+This repository is based on an academic research work titled:
+**“Sensor-Based Nadi Pariksha Diagnostic Machine”**  
+Focused on digitizing Ayurvedic pulse diagnostics using biomedical sensors and digital health technologies.
 
+### 👨‍🎓 Authors
+**Tejendra Singh** – Sharda University, Agra
+
+### 👨‍🏫 Mentor
+**Dr. Manish Baboo Agarwal**  
+Faculty Mentor & Academic Guide, Sharda University, Agra
+
+### 🙏 Acknowledgment
+The authors would like to express their sincere gratitude to Dr. Manish Baboo Agarwal for his valuable guidance, technical insights, and continuous encouragement throughout the development of this project. His mentorship played a crucial role in aligning the system design with both academic rigor and practical applicability in the field of digital healthcare and Ayurvedic diagnostics.
+
+### 📜 License & Credits
+This project is intended for academic, research, and educational purposes.  
+**This project is powered by Alpha Ignite Group**
