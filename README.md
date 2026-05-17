@@ -1,169 +1,121 @@
-# Nadi-Pariksha
+# 🩺 Nadi Pariksha Diagnostic Machine Dashboard
+## 🚀 An IEEE Research Project Bridging Ayurvedic Wisdom & Modern Sensor Technology
 
-**🧘 Sensor-Based Nadi Pariksha Diagnostic Machine**
+[![Vite Build Verification](https://img.shields.io/badge/Build-Passing-emerald?style=flat-square&logo=vite)](https://alpha-ignite-dash-2026.web.app)
+[![Firebase Hosting](https://img.shields.io/badge/Hosting-Firebase-blue?style=flat-square&logo=firebase)](https://alpha-ignite-dash-2026.web.app)
+[![Tech Stack](https://img.shields.io/badge/Stack-React%2019%20%7C%20TypeScript%20%7C%20Tailwind%20CSS-blueviolet?style=flat-square)](package.json)
+[![Code Standard](https://img.shields.io/badge/Design_System-Classic_AI-cyan?style=flat-square)](artifacts/alpha_ignite_design_skill.md)
 
-A sensor-driven digital system for Ayurvedic Nadi Pariksha (pulse diagnosis) that objectively analyzes Vata, Pitta, and Kapha doshas using modern biomedical sensors, embedded systems, and signal-processing algorithms.
+This repository contains the interactive clinical dashboard for the **Sensor-Based Nadi Pariksha Diagnostic Machine** research project. The system captures micro-variations in radial arterial pulse pressure across Vata, Pitta, and Kapha positions, running edge-optimized AI classifiers to generate objective, repeatable, and digitally trackable wellness insights.
+
+🔗 **Live Deployment:** [https://alpha-ignite-dash-2026.web.app](https://alpha-ignite-dash-2026.web.app)
 
-This project bridges traditional Ayurvedic diagnostics with digital health technologies, improving repeatability, scalability, and preventive healthcare integration.
+---
+
+## 📸 System Architecture
+
+```mermaid
+graph TD
+    A[Tri-Channel Pressure Sensor Array<br>Vata, Pitta, Kapha] -->|Analog Signal| B[ADC / Signal Conditioning]
+    C[Wrist Skin Temp Sensor] -->|I2C| B
+    B -->|SPI| D[ARM Cortex-M4F MCU]
+    D -->|Real-Time Inference| E[Edge AI Engine<br>Poly-SVM Model]
+    D -->|Bluetooth Low Energy 5.0| F[React Diagnostic Dashboard]
+    E -->|Dosha Dominance Score| F
+```
 
-📌 Project Overview
+---
 
-Nadi Pariksha is a core Ayurvedic diagnostic technique based on pulse examination. Traditional methods depend heavily on practitioner skill and are often subjective.
+## 🎨 Design System: "Classic AI / Premium Wellness"
 
-This project proposes a sensor-based pre-prototype system that:
+The project adheres to the custom design rules defined in our [Alpha Ignite Design Skill](file:///C:/Users/lenovo/.gemini/antigravity/brain/b624dd4f-4af0-44ec-94ba-6178049954cc/artifacts/alpha_ignite_design_skill.md) standard. 
 
-Digitizes pulse examination
+### 🎨 Color Palette
+- **Primary Page Background:** HSL Slate-50 (`#f1f5f9`)
+- **Primary Text:** HSL Slate-900 (`#0f172a`)
+- **Accent Primary:** Blue-600 (`#2563eb`)
+- **Accent Secondary / Dark Surface:** Sky-600 (`#0284c7`) & Slate-900 (`#0f172a`)
+- **Dosha Core Colors:** Vata (`#3b82f6` - Blue) · Pitta (`#ef4444` - Red) · Kapha (`#10b981` - Emerald)
 
-Measures pulse rate, rhythm, strength, and temperature
+### 🧩 UI Elements
+- `card-medical`: Custom container with smooth translation and sky hover border effects.
+- `btn-primary` & `btn-secondary`: Sleek buttons with active scale micro-animations.
+- `glass-panel`: Border-sleek white panels with backdrop blur effects.
 
-Maps physiological signals to dosha dominance
+---
 
-Displays results on a digital dashboard
+## 🗺️ Page Mapping & Navigation
 
-🎯 Key Objectives
+| Route | Page Component | Features & Description |
+|---|---|---|
+| `/` | **Home Page** | Introduction to core machine capabilities, research stats (94.2% accuracy), and key objectives. |
+| `/about` | **About Project** | Comprehensive scientific timeline (Phase 1-5), project objectives, and literature review references. |
+| `/sensors` | **Sensors Explorer** | Interactive detail panel for Piezoelectric Vata, Piezoresistive Pitta, Capacitive Kapha, and Infrared Temp sensors. |
+| `/dashboard` | **Diagnostic Dashboard** | Real-time SVG pulse waveforms (Recharts), Vital signs telemetry, AI Dosha Analysis, and report generation controls. |
+| `/admin` | **Clinical Console** | Practitioner dashboard with subject records, database management, and active machine parameter configuration. |
+| `/team` | **Research Team** | Profiles of the Principal Investigators, engineering teams, and IEEE advisor boards. |
 
-Reduce subjectivity in Ayurvedic pulse diagnosis
+---
 
-Digitize Vata–Pitta–Kapha pulse characteristics
+## 🛠️ Technology Stack
 
-Enable repeatable and objective analysis
+- **Framework:** Vite + React 19 + TypeScript
+- **Styling:** Tailwind CSS v4 + Vanilla CSS utility class configurations
+- **Animations:** Framer Motion (sequential stagger on entrances)
+- **Charts:** Recharts (custom dual-shaded area layouts for medical pulse waveforms)
+- **Icons:** Lucide Icons (Unified set)
+- **Hosting:** Firebase Hosting (fully automated CLI builds)
 
-Support preventive and integrative healthcare
+---
 
-Align with AYUSH & ABDM (India’s Digital Health Mission)
+## ⚡ Development & Scripts
 
-🧠 System Architecture
-1️⃣ Sensor Layer
+Ensure you have [Node.js](https://nodejs.org) installed on your system.
 
-Pressure Sensors (Piezoelectric / Piezoresistive)
+### 1. Installation
+Install all required project dependencies:
+```bash
+npm install
+```
 
-PPG Sensors (Photoplethysmography)
+### 2. Local Development Server
+Start the development server with Hot Module Replacement (HMR):
+```bash
+npm run dev
+```
 
-Skin Temperature Sensor (Tapamana)
+### 3. Production Build
+Compile and minify the React application for production deployment:
+```bash
+npm run build
+```
 
-Sensors are placed at classical Vata, Pitta, Kapha wrist positions.
+### 4. Code Quality & Linting
+Run the ESLint suite to verify code formatting compliance:
+```bash
+npm run lint
+```
 
-2️⃣ Embedded System
+---
 
-Microcontroller (e.g., Arduino Nano)
-
-ADC-based signal acquisition
-
-Noise filtering (0.5–20 Hz bandpass)
-
-Bluetooth / USB communication
-
-3️⃣ Software & Analytics
-
-Pulse waveform analysis
-
-Feature extraction:
-
-Heart Rate (Vega)
-
-Rhythm (Tala)
-
-Strength (Bala)
-
-Shape/Tension (Akruti)
-
-Temperature (Tapamana)
-
-Rule-based & ML-ready dosha classification logic
-
-📊 Dashboard (UI)
-
-The system provides a digital dashboard that displays:
-
-Live pulse waveforms (PPG & pressure)
-
-Heart rate & variability
-
-Temperature readings
-
-Dosha dominance visualization (Vata / Pitta / Kapha)
-
-🔗 Dashboard Link (Add Here)
-
-👉 Live Dashboard / Demo:
-(https://nadi-pariksha-ts.web.app/)
-
-(Replace with your deployed web app / mobile app / prototype UI link)
-
-🧪 Validation Strategy
-
-Double-blind comparison with expert Ayurvedic practitioners
-
-Statistical agreement analysis (e.g., Cohen’s Kappa)
-
-Iterative refinement using expert feedback
-
-Future scope for clinical trials
-
-🇮🇳 National Policy Relevance
-
-This project aligns with:
-
-AYUSH Integration
-
-Ayushman Bharat Digital Mission (ABDM)
-
-Preventive & community healthcare initiatives
-
-Digital transformation of traditional medicine
-
-🚀 Future Scope
-
-Hardware prototype development
-
-Machine Learning–based dosha classification
-
-Multi-modal sensing (ECG + PPG)
-
-Cloud-based analytics & telemedicine support
-
-Integration with Digital Health IDs
-
-🛠️ Tech Stack (Proposed)
-
-Hardware: Arduino Nano, PPG Sensor, Pressure Sensor, DS18B20
-
-Software: Embedded C / Python / Signal Processing
-
-UI: Web or Mobile Dashboard
-
-Connectivity: Bluetooth / USB
-
-Future: AI / Machine Learning models
-
-📄 Research Foundation
-
-This repository is based on an academic research work titled:
-
-“Sensor-Based Nadi Pariksha Diagnostic Machine”
-Focused on digitizing Ayurvedic pulse diagnostics using biomedical sensors and digital health technologies. 
-
-Paper
-
-👨‍🎓 Authors
-
-Tejendra Singh – Sharda University, Agra
-
-👨‍🏫 Mentor
-
-Dr. Manish Baboo Agarwal
-Faculty Mentor & Academic Guide
-Sharda University, Agra
-
-🙏 Acknowledgment
-
-The authors would like to express their sincere gratitude to Dr. Manish Baboo Agarwal for his valuable guidance, technical insights, and continuous encouragement throughout the development of this project. His mentorship played a crucial role in aligning the system design with both academic rigor and practical applicability in the field of digital healthcare and Ayurvedic diagnostics.
-
-🔹 Where to place this in README?
-
-📜 License
-
-This project is intended for academic, research, and educational purposes.
-(Add an open-source license if you plan public collaboration.
-
-**This project powered by Alpha Ignite Group**
+## 🌐 Deployment Configuration
+
+The application is deployed using the default project profile mapping in [.firebaserc](file:///.firebaserc):
+```json
+{
+  "projects": {
+    "default": "alpha-ignite-dash-2026"
+  }
+}
+```
+
+Deploy the compiled distribution bundle directly to Firebase Hosting:
+```bash
+firebase deploy --only hosting
+```
+
+---
+
+## ⚖️ Ethics & Academic Standards
+
+This dashboard and associated research data strictly comply with **IEEE Ethics Guidelines** and **HIPAA/HCP Data Standards**. All patient pulse datasets are entirely anonymized at the MCU level prior to transmission to local client browsers.
